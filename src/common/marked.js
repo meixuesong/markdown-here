@@ -12,7 +12,7 @@
 
 var block = {
   newline: /^\n+/,
-  code: /^( {4}[^\n]+\n*)+/,
+  code: /^(\n{4}[^\n]+\n*)+/, //将/^(    {4}[^\n]+\n*)+/ 换成了现在这个，目的是避免Bear导出的Markdown中的List被转换成code
   fences: noop,
   hr: /^( *[-*_]){3,} *(?:\n+|$)/,
   heading: /^ *(#{1,6}) *([^\n]+?) *#* *(?:\n+|$)/,
