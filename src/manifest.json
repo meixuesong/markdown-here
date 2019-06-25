@@ -43,10 +43,4 @@
     "page": "common/options.html",
     "open_in_tab": true
   }
-
-  ,"applications": {
-    "gecko": {
-      "id": "markdown-here-webext@adam.pritchard"
-    }
-  }
 }

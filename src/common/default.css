@@ -10,7 +10,14 @@
 
 /* This is the overall wrapper, it should be treated as the `body` section. */
 .markdown-here-wrapper {
+  font-family: Avenir,Helvetica,Arial,sans-serif;
+  max-width: 46em;
+  font-size: 11pt;
+  color: #2c3e50;
+  padding: 1em;
+  margin: 1em;
 }
+
 
 /* To add site specific rules, you can use the `data-md-url` attribute that we
    add to the wrapper element. Note that rules like this are used depending
@@ -67,18 +74,22 @@ p {
   /* !important is needed here because Hotmail/Outlook.com uses !important to
      kill the margin in <p>. We need this to win. */
   margin: 0 0 1.2em 0 !important;
+  line-height: 1.5em;
 }
 
 table, pre, dl, blockquote, q, ul, ol {
   margin: 1.2em 0;
+  font-size: 1em;
 }
 
 ul, ol {
   padding-left: 2em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 li {
-  margin: 0.5em 0;
+  line-height: 1.3em;  
 }
 
 /* Space paragraphs in a list the same as the list itself. */
@@ -119,9 +130,9 @@ dl dd {
 }
 
 blockquote, q {
-  border-left: 4px solid #DDD;
+  border-left: 4px solid #bed5e2;
   padding: 0 1em;
-  color: #777;
+  color: #0c4363;
   quotes: none;
 }
 
@@ -130,14 +141,15 @@ blockquote::before, blockquote::after, q::before, q::after {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  margin: 1.3em 0 1em;
+  margin: 0.5em 0px;
   padding: 0;
   font-weight: bold;
 }
 
 h1 {
   font-size: 1.6em;
-  border-bottom: 1px solid #ddd;
+  /*border-bottom: 1px solid #b8dcec;*/
+  text-align: center;
 }
 
 h2 {
@@ -146,11 +158,11 @@ h2 {
 }
 
 h3 {
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 h5 {
@@ -190,13 +202,22 @@ table tr:nth-child(2n) {
 }
 
 table tr th, table tr td {
-  font-size: 1em;
+  font-size: 0.9em;
   border: 1px solid #CCC;
   margin: 0;
-  padding: 0.5em 1em;
+  padding: 0.3em 0.6em;  
 }
 
 table tr th {
  font-weight: bold;
   background-color: #F0F0F0;
+}
+
+img {
+  max-width: 94%;
+}
+
+a {
+    color: #1e6bb8;
+    text-decoration: none;
 }
